@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <title>Troll Parkour</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="game-wrapper">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+      <div>LEVEL <span id="levelText">1</span></div>
+      <div>DEATHS <span id="deathText">0</span></div>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="start-screen" class="screen">
+      <h1>TROLL PARKOUR</h1>
+      <p>Reach the green flag.</p>
+      <p class="small">
+        Arrow Keys / A-D = Move<br>
+        Space / W / ↑ = Jump
+      </p>
+      <button id="startButton">START GAME</button>
+    </div>
+
+    <div id="win-screen" class="screen hidden">
+      <h1>YOU WIN!</h1>
+      <p>You survived the troll levels.</p>
+      <button id="restartButton">PLAY AGAIN</button>
+    </div>
+
+    <!-- Mobile controls -->
+    <div id="mobile-controls">
+      <button id="leftBtn">◀</button>
+      <button id="jumpBtn">▲</button>
+      <button id="rightBtn">▶</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
